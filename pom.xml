@@ -66,7 +66,6 @@
         <maven.compiler.release>8</maven.compiler.release>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
-
         <junit.version>5.9.1</junit.version>
         <mockito.version>4.8.1</mockito.version>
         <mockitojupiter.version>4.8.1</mockitojupiter.version>
@@ -76,7 +75,7 @@
         <jakarta.annotation.version>2.1.1</jakarta.annotation.version>
         <lombok.version>1.18.23</lombok.version>
         <guava.version>31.1-jre</guava.version>
-        <commons.version>3.12.0</commons.version>
+        <commons.version>3.12.1</commons.version>
     </properties>
 
     <dependencyManagement>
