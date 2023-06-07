@@ -152,11 +152,11 @@
                 </exclusion>
             </exclusions>
         </dependency>
-        <dependency>
+<!--         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
             <version>${httpcompontents.version}</version>
-        </dependency>
+        </dependency> -->
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpmime</artifactId>
