@@ -6,7 +6,7 @@ import org.apache.http.conn.HttpClientConnectionManager;
 import org.apache.http.conn.socket.ConnectionSocketFactory;
 import org.apache.http.conn.ssl.NoopHostnameVerifier;
 import org.apache.http.impl.client.CloseableHttpClient;
-import org.apache.http.impl.client.HttpClientBuilder;
+// import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.impl.conn.PoolingHttpClientConnectionManager;
 import org.apache.http.ssl.SSLContexts;
 import org.telegram.telegrambots.bots.DefaultBotOptions;
@@ -23,12 +23,15 @@ import java.util.concurrent.TimeUnit;
 public class TelegramHttpClientBuilder {
 
     public static CloseableHttpClient build(DefaultBotOptions options) {
+       /*
         HttpClientBuilder httpClientBuilder = HttpClientBuilder.create()
                 .setSSLHostnameVerifier(new NoopHostnameVerifier())
                 .setConnectionManager(createConnectionManager(options))
                 .setConnectionTimeToLive(70, TimeUnit.SECONDS)
                 .setMaxConnTotal(100);
         return httpClientBuilder.build();
+        */
+        return null;
     }
 
     private static HttpClientConnectionManager createConnectionManager(DefaultBotOptions options) {
