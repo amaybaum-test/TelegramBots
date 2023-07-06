@@ -3,7 +3,7 @@ package org.telegram.telegrambots.facilities.filedownloader;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
-//import org.apache.http.impl.client.HttpClients;
+import org.apache.http.impl.client.HttpClients;
 import org.telegram.telegrambots.meta.api.objects.File;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import org.telegram.telegrambots.meta.updateshandlers.DownloadFileCallback;
