@@ -34,24 +34,23 @@ public class TelegramHttpClientBuilder {
         return null;
     }
 
-    private static HttpClientConnectionManager createConnectionManager(DefaultBotOptions options) {
-        Registry<ConnectionSocketFactory> registry;
-        switch (options.getProxyType()) {
-            case NO_PROXY:
-                return null;
-            case HTTP:
-                registry = RegistryBuilder.<ConnectionSocketFactory> create()
-                        .register("http", new HttpConnectionSocketFactory())
-                        .register("https", new HttpSSLConnectionSocketFactory(SSLContexts.createSystemDefault())).build();
-                return new PoolingHttpClientConnectionManager(registry);
-            case SOCKS4:
-            case SOCKS5:
-                registry = RegistryBuilder.<ConnectionSocketFactory> create()
-                        .register("http", new SocksConnectionSocketFactory())
-                        .register("https", new SocksSSLConnectionSocketFactory(SSLContexts.createSystemDefault()))
-                        .build();
-                return new PoolingHttpClientConnectionManager(registry);
-        }
+    private static HttpClientConnectionManager createConnectionManager(DefaultBotOptions options) {Registry<ConnectionSocketFactory> registry;
+//        switch (options.getProxyType()) {
+//            case NO_PROXY:
+//                return null;
+//            case HTTP:
+//                registry = RegistryBuilder.<ConnectionSocketFactory> create()
+//                        .register("http", new HttpConnectionSocketFactory())
+//                        .register("https", new HttpSSLConnectionSocketFactory(SSLContexts.createSystemDefault())).build();
+//                return new PoolingHttpClientConnectionManager(registry);
+//            case SOCKS4:
+//            case SOCKS5:
+//                registry = RegistryBuilder.<ConnectionSocketFactory> create()
+//                        .register("http", new SocksConnectionSocketFactory())
+//                        .register("https", new SocksSSLConnectionSocketFactory(SSLContexts.createSystemDefault()))
+//                        .build();
+//                return new PoolingHttpClientConnectionManager(registry);
+//        }
         return null;
     }
 
